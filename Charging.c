@@ -4,6 +4,7 @@
 
 #include "Charging.h"
 
-void main()
+int main()
 {
+  return;
 }
