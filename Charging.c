@@ -4,7 +4,7 @@
 
 #include "Charging.h"
 
-int main()
+int mainCharging()
 {
   //return;
 }
