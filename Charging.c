@@ -4,7 +4,7 @@
 
 #include "Charging.h"
 
-int mainCharging()
+int GetChargingRange()
 {
   //return;
 }
