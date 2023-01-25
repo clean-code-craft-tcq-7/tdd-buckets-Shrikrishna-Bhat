@@ -4,6 +4,9 @@
 
 #include "Charging.h"
 
+int chargingSamples[100];
+int NumOfChargingSamples;
+
 int GetChargingRange()
 {
   //return;
@@ -11,9 +14,6 @@ int GetChargingRange()
 
 int getPeriodicCharingSample()
 {
-  int chargingSamples[100];
-  int NumOfChargingSamples;
-  NumOfChargingSamples = 0;
   printf("Enter number of charging samples\n");
   scanf("%d",NumOfChargingSamples);
   
