@@ -30,14 +30,13 @@ int getPeriodicCharingSample()
 
 void BubbleSort(int chargingSamples[], int NumCS)
 {
-  int i,j;
+  int i,j,temp;
   for(i=0;i<NumCS;i++)
   {
-    for(j=0;j<(NumCS - i - 1);j++)
+    for(j=0;j<(NumCS-i-1);j++)
     {
       if(chargingSamples[j]>chargingSamples[j+1])
-      {
-        int temp;             
+      {          
         temp                  = chargingSamples[j];
         chargingSamples[j]    = chargingSamples[j+1];
         chargingSamples[j+1]  = temp;
