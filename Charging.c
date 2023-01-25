@@ -20,6 +20,6 @@ int getPeriodicCharingSample()
   printf("Enter the charging samples");
   for(int i=0;i<NumOfChargingSamples;i++)
   {
-    scanf("%d",chargingSamples[i])
+    scanf("%d",chargingSamples[i]);
   }
 }
