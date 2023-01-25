@@ -7,6 +7,8 @@
 int chargingSamples[100];
 int NumOfChargingSamples;
 
+void BubbleSort(int chargingSamples[], int NumCS);
+
 int GetChargingRange()
 {
   //return;
