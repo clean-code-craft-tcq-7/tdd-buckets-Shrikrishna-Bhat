@@ -8,3 +8,7 @@ int GetChargingRange()
 {
   //return;
 }
+
+int getPeriodicCharingSample()
+{
+}
