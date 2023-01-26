@@ -17,7 +17,7 @@ int GetChargingRange()
 
 int getPeriodicCharingSample()
 {
-  bool consective;
+  bool consecutive;
   int i;
   printf("Enter number of charging samples\n");
   scanf("%d",&NumOfChargingSamples);
@@ -30,7 +30,7 @@ int getPeriodicCharingSample()
   
   BubbleSort(chargingSamples, NumOfChargingSamples);
   consective = SampleAreConsecutive(chargingSamples, NumOfChargingSamples);
-  return consective;
+  return consecutive;
 }
 
 void BubbleSort(int chargingSamples[], int NumCS)
@@ -48,19 +48,24 @@ void BubbleSort(int chargingSamples[], int NumCS)
       }
     }
   }
+  printf("Sorted elements\n");
+  for(i=0;i<NumCS;i++)
+  {
+    printf(" %d \n",chargingSamples[i]);
+  }
 }
 
 bool SampleAreConsecutive(int chargingSamples[], int NumCS)
 {
   int i;
-  bool consective;
+  bool consecutive;
   for(i=1;i<NumCS;i++)
   {
     if(chargingSamples[i] != chargingSamples[i-1]+1)
     {
-      consective = false;
+      consecutive = false;
     }
-    consective = true;
+    consecutive = true;
   }
-  return consective;
+  return consecutive;
 }
