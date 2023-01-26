@@ -51,7 +51,7 @@ void BubbleSort(int chargingSamples[], int NumCS)
 bool SampleAreConsecutive(int chargingSamples[], int NumCS)
 {
   int i;
-  boolean consective;
+  bool consective;
   for(i=1;i<n;i++)
   {
     if(chargingSamples[] != chargingSamples[])
