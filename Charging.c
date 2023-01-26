@@ -29,7 +29,7 @@ int getPeriodicCharingSample()
   }
   
   BubbleSort(chargingSamples, NumOfChargingSamples);
-  consective = SampleAreConsecutive(chargingSamples, NumOfChargingSamples);
+  consecutive = SampleAreConsecutive(chargingSamples, NumOfChargingSamples);
   return consecutive;
 }
 
