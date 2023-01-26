@@ -61,7 +61,7 @@ bool SampleAreConsecutive(int chargingSamples[], int NumCS)
   bool consecutive;
   for(i=1;i<NumCS;i++)
   {
-    if(chargingSamples[i] != chargingSamples[i-1]+1)
+    if(chargingSamples[i] != ((chargingSamples[i-1])+1))
     {
       consecutive = false;
     }
