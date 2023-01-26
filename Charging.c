@@ -22,7 +22,7 @@ int getPeriodicCharingSample()
   printf("Enter number of charging samples\n");
   scanf("%d",&NumOfChargingSamples);
   
-  printf("Enter the charging samples");
+  printf("Enter the charging samples\n");
   for(i=0;i<NumOfChargingSamples;i++)
   {
     scanf("%d",&chargingSamples[i]);
