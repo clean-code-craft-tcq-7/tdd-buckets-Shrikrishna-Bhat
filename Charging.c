@@ -8,6 +8,7 @@ int chargingSamples[100];
 int NumOfChargingSamples;
 
 void BubbleSort(int chargingSamples[], int NumCS);
+void PrintSortedElements(int chargingSamples[], int NumCS);
 bool SampleAreConsecutive(int chargingSamples[], int NumCS);
 
 int GetChargingRange()
@@ -29,6 +30,7 @@ int getPeriodicCharingSample()
   }
   
   BubbleSort(chargingSamples, NumOfChargingSamples);
+  PrintSortedElements(chargingSamples, NumOfChargingSamples);
   consecutive = SampleAreConsecutive(chargingSamples, NumOfChargingSamples);
   return consecutive;
 }
@@ -48,6 +50,11 @@ void BubbleSort(int chargingSamples[], int NumCS)
       }
     }
   }
+}
+
+void PrintSortedElements(int chargingSamples[], int NumCS)
+{
+  int i;
   printf("Sorted elements\n");
   for(i=0;i<NumCS;i++)
   {
