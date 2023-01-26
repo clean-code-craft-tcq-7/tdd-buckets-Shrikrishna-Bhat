@@ -20,12 +20,12 @@ int getPeriodicCharingSample()
   bool consective;
   int i;
   printf("Enter number of charging samples\n");
-  scanf("%d",NumOfChargingSamples);
+  scanf("%d",&NumOfChargingSamples);
   
   printf("Enter the charging samples");
   for(i=0;i<NumOfChargingSamples;i++)
   {
-    scanf("%d",chargingSamples[i]);
+    scanf("%d",&chargingSamples[i]);
   }
   
   BubbleSort(chargingSamples, NumOfChargingSamples);
