@@ -17,7 +17,7 @@ int GetChargingRange()
 
 int getPeriodicCharingSample()
 {
-  boolean consective;
+  bool consective;
   printf("Enter number of charging samples\n");
   scanf("%d",NumOfChargingSamples);
   
@@ -52,9 +52,9 @@ bool SampleAreConsecutive(int chargingSamples[], int NumCS)
 {
   int i;
   bool consective;
-  for(i=1;i<n;i++)
+  for(i=1;i<NumCS;i++)
   {
-    if(chargingSamples[] != chargingSamples[])
+    if(chargingSamples[i] != chargingSamples[i-1]+1)
     {
       consective = false;
     }
