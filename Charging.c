@@ -18,11 +18,12 @@ int GetChargingRange()
 int getPeriodicCharingSample()
 {
   bool consective;
+  int i;
   printf("Enter number of charging samples\n");
   scanf("%d",NumOfChargingSamples);
   
   printf("Enter the charging samples");
-  for(int i=0;i<NumOfChargingSamples;i++)
+  for(i=0;i<NumOfChargingSamples;i++)
   {
     scanf("%d",chargingSamples[i]);
   }
