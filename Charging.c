@@ -64,7 +64,7 @@ void PrintSortedElements(int chargingSamples[], int NumCS)
 
 bool SampleAreConsecutive(int chargingSamples[], int NumCS)
 {
-  int i;
+  int i, range, reading;
   bool consecutive;
   for(i=1;i<NumCS;i++)
   {
