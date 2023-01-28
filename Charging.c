@@ -11,11 +11,6 @@ void BubbleSort(int chargingSamples[], int NumCS);
 void PrintSortedElements(int chargingSamples[], int NumCS);
 bool SampleAreConsecutive(int chargingSamples[], int NumCS);
 
-int GetChargingRange()
-{
-  //return;
-}
-
 int getPeriodicCharingSample()
 {
   bool consecutive;
