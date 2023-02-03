@@ -9,7 +9,7 @@ int NumOfChargingSamples;
 
 void BubbleSort(int chargingSamples[], int NumCS);
 void PrintSortedElements(int chargingSamples[], int NumCS);
-bool SampleAreConsecutive(int chargingSamples[], int NumCS);
+bool AreSampleConsecutive(int chargingSamples[], int NumCS);
 
 int getPeriodicCharingSample()
 {
@@ -57,7 +57,7 @@ void PrintSortedElements(int chargingSamples[], int NumCS)
   }
 }
 
-bool SampleAreConsecutive(int chargingSamples[], int NumCS)
+bool AreSampleConsecutive(int chargingSamples[], int NumCS)
 {
   int i, range, reading;
   bool consecutive;
